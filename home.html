@@ -1,0 +1,92 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maged - Profile</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animations.css">
+    <link rel="stylesheet" href="pages-styling/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="profile-page">
+    <script>
+        console.log("Hello Maged");
+        function toggleNav() {
+            var header = document.querySelector('.header-container');
+            header.classList.toggle('mobile-open');
+        }
+        function playMusic() {
+            var audio = document.getElementById("music");
+            if (audio.paused) {
+                audio.play();
+                document.getElementById("musicBtn").innerHTML = '<i class="fas fa-pause"></i> Pause Music';
+            } else {
+                audio.pause();
+                document.getElementById("musicBtn").innerHTML = '<i class="fas fa-play"></i> Play Music';
+            }
+        }
+    </script>
+    <script src="portfolio.js"></script>
+    
+    <video autoplay muted loop id="bg-video">
+        <source src="pages/88481-606110665.mp4" type="video/mp4">
+    </video>
+    
+    <audio id="music" loop>
+        <source src="mondamusic-bedroom-night-sensual-massage-512912.mp3" type="audio/mp3">
+    </audio>
+    
+    
+    <div class="header-container">
+        <h1><span id="name1">&lt;/&gt;</span> Maged</h1>
+        <div class="boxes">
+            <a href="index.html" class="box1 nav-link">Home</a>
+            <a href="home.html" class="box1 nav-link">Profile</a>
+            <a href="projects.html" class="box1 nav-link">Projects</a>
+            <a href="aboutme.html" class="box2 nav-link">About Me</a>
+            <a href="contact.html" class="box3 nav-link">Contact</a>
+            <a href="#" class="box4 nav-link"><i class="fas fa-shopping-cart"></i> coming soon</a>
+        </div>
+        <button class="hamburger" onclick="toggleNav()">
+            <i class="fas fa-bars"></i>
+        </button>
+    </div>
+
+    <div class="profile-content">
+        <div class="profile-card animate-on-scroll">
+            <div class="hero-image-wrap">
+                <img class="mgd" src="images/profile.jpg" alt="Maged">
+            </div>
+            <div class="profile-text">
+                <span style="color: white; font-size: 24px;">Hello, I'm</span>
+                <span style="color: white; font-size: 48px; font-family: 'Poppins', 'Inter', 'Segoe UI', -apple-system, sans-serif;"><span id="name1">&lt;/&gt;</span>Maged</span>
+                    
+                <div class="links23">
+                    <a href="https://www.youtube.com/@MaGed177">
+                        <i class="fab fa-youtube"></i>
+                        <span>Youtube</span>
+                    </a>
+                </div>
+
+                <div class="links23">
+                    <a href="https://www.instagram.com/magedinsta2/">
+                        <i class="fab fa-instagram"></i>
+                        <span>Instagram</span>
+                    </a>
+                </div> 
+                
+                <div class="links23">
+                    <a href="https://www.tiktok.com/@maged1183">
+                        <i class="fab fa-tiktok"></i>
+                        <span>Tiktok</span>
+                    </a>
+                </div>
+
+                <button id="musicBtn" onclick="playMusic()" class="music-btn">
+                    <i class="fas fa-play"></i> Play Music
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

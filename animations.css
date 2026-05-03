@@ -1,0 +1,25 @@
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(50px) scale(0.95);
+    transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.animate-on-scroll.visible {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+}
+
+.hero-text { transition-delay: 0s; }
+.hero-image-wrap { transition-delay: 0.2s; }
+
+.abt { transition-delay: 0.1s; }
+
+.card1 { transition-delay: 0s; }
+.card2 { transition-delay: 0.15s; }
+.card3 { transition-delay: 0.3s; }
+
+#cn { transition-delay: 0.1s; }
+.contact-container { transition-delay: 0.2s; }
+
+.profile-card { transition-delay: 0.1s; }
+.profile-text { transition-delay: 0.2s; }

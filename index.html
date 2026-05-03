@@ -1,0 +1,120 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maged</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animations.css">
+<script>
+        function toggleNav() {
+            var header = document.querySelector('.header-container');
+            header.classList.toggle('mobile-open');
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <script src="portfolio.js"></script>
+    <div class="header-container">
+        <h1><span id="name1">&lt;/&gt;</span> Maged</h1>
+        <div class="boxes">
+            <a href="index.html" class="box1 nav-link">Home</a>
+            <a href="home.html" class="box1 nav-link">Profile</a>
+            <a href="projects.html" class="box1 nav-link">Projects</a>
+            <a href="aboutme.html" class="box2 nav-link">About Me</a>
+            <a href="contact.html" class="box3 nav-link">Contact</a>
+            <a href="#" class="box4 nav-link"><i class="fas fa-shopping-cart"></i> coming soon</a>
+        </div>
+        <button class="hamburger" onclick="toggleNav()" style="display:flex;">
+            <i class="fas fa-bars"></i>
+        </button>
+    </div>
+
+<div class="hero-section">
+        <div class="hero-text animate-on-scroll">
+            <span style="color: white; font-size: 20px;">Hi, I'm</span>
+            <span id="mg33">Maged</span>
+            <span style="color: white; font-size: 40px;">FullStack Developer <span id="name1">&lt;/&gt;</span></span>
+            <div style="padding: 8px 0;">
+                <div class="line-text">
+                    <span>A Begginer web developer with a strong passion for building and learning <br></span>
+                    <span>I turn ideas into real, interactive expreiences.</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-image-wrap animate-on-scroll">
+            <img class="mgd" src="images/profile.jpg" alt="Maged">
+        </div>
+    </div>
+
+    <div class="abt animate-on-scroll" id="abt">
+    <p class="abt1">Im a beginner web developer with a strong passion for building and learning. I started my journey with HTML, CSS, and JavaScript, and since then I've been focused on improving my skills step by step. What I enjoy most about web development is the process of turning simple ideas into real, interactive experiences that people can actually use and see.
+
+I'm especially interested in creating clean, modern designs and making sure everything feels smooth and easy to use. Even though I'm still at the beginning of my journey, I take every project seriously and treat it as an opportunity to grow. I like experimenting with layouts, improving my styling, and understanding how things work behind the scenes—not just copying code, but actually learning it.
+
+I believe that consistency is more important than speed, so I focus on practicing regularly and pushing myself to get better with every line of code I write. Whether it's fixing small design details or learning new JavaScript concepts, I enjoy the challenge and the progress that comes with it.
+
+Right now, I'm working on building my portfolio and creating projects that reflect my skills and creativity. My goal is to become a professional developer who can build full, high-quality web applications and continue learning new technologies along the way.
+
+This is just the beginning for me, and I'm excited about what's coming next.
+ <a id="read-more" href="aboutme.html">More</a>
+    </p>
+    
+    </div><br><br><br><br>
+
+
+    <h2 id="projects" style="background-color: #1f2d3a;" class="animate-on-scroll">My Projects</h2><br><br>
+    <div class="cards">
+        <div class="card1 animate-on-scroll" href="#">
+            <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=300&h=200&fit=crop" alt="Project 1">
+            <h3>Projects</h3>
+        </div>
+        <div class="card2 animate-on-scroll" href="#">
+            <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=300&h=200&fit=crop" alt="Project 2">
+            <h3>Projects</h3>
+        </div>
+<div class="card3 animate-on-scroll">
+            <a href="#"></a>
+            <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=300&h=200&fit=crop" alt="Project 3">
+            <h3>Projects</h3>
+        </div>
+        <div class="card3 animate-on-scroll">
+            <a href="#"></a>
+            <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=300&h=200&fit=crop" alt="Project 3">
+            <h3>Projects</h3>
+        </div>
+        <div class="card3 animate-on-scroll">
+            <a href="#"></a>
+            <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=300&h=200&fit=crop" alt="Project 3">
+            <h3>Projects</h3>
+        </div>
+        <div class="card3 animate-on-scroll">
+            <a href="#"></a>
+            <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=300&h=200&fit=crop" alt="Project 3">
+            <h3>Projects</h3>
+        </div>
+    </div><br><br><br>
+
+     <div><h2 id="cn" class="animate-on-scroll">Contact</h2></div>
+    <div class="contact-container animate-on-scroll">
+        <div class="contact-me">
+            <label for="email">Gmail</label>
+            <textarea name="email" id="email" rows="3" maxlength="35"></textarea>
+            <label for="name">First Name</label>
+            <textarea name="SecName" id="secname" rows="3"></textarea>
+            <label for="secname">Secondary Name</label>
+            <textarea name="Name" id="secname" rows="3"></textarea>
+            <button type="submit" id="submit">Contact</button>
+            </div>
+            
+
+            <div class="contact-links">
+                <div>My Links</div>
+
+            </div>
+        </div>
+        <div id="copyright">© 2026 DeVuRa. All rights reserved.</div>
+    </div>
+    
+</body>
+</html>
